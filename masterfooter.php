@@ -55,11 +55,9 @@
                     <div class="social-block">
                         <h3 class="title">STAY CONNECTED</h3>
                         <ul class="social-list list-inline">
-                            <li class="single-social facebook"><a href=""><i class='bx bxl-facebook'></i></a>
-                            </li>
-                            <li class="single-social twitter"><a href=""><i class='bx bxl-twitter' ></i></a></li>
-                            <li class="single-social google"><a href=""><i class='bx bxl-instagram-alt' ></i></a></li>
-                            <li class="single-social youtube"><a href=""><i class='bx bxl-youtube' ></i></a></li>
+                            <li class="single-social twitter"><a href="https://x.com/falakpublishers?t=--2yLHn_Gb8ttlPPzDhV6w&s=09" target=”_blank”><i class='bx bxl-twitter' ></i></a></li>
+                            <li class="single-social google"><a href="https://www.instagram.com/falakpublishers?igsh=bHF0czk1eTVrOXd0" target=”_blank”><i class='bx bxl-instagram-alt' ></i></a></li>
+                            <li class="single-social youtube"><a href="https://youtube.com/@falakpublishers?si=QvNvY8a91o73drUH" target=”_blank”><i class='bx bxl-youtube' ></i></a></li>
                         </ul>
                     </div>
                 </div>

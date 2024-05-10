@@ -88,9 +88,12 @@ input[type="file"]:focus {
         <input type="text" id="name" name="name" required><br>
         <label for="name">Author:</label>
         <input type="text" id="author" name="author" required><br>
-        <label for="price">Price:</label>
+        <label for="price">Your Price:</label>
         <input type="text" id="price" name="price" required><br>
-        
+        <label for="originalprice">Original Price:</label>
+        <input type="text" id="originalprice" name="originalprice" required><br>
+        <label for="discount">Discount: (Do not include % sign!)</label>
+        <input type="text" id="discount" name="discount" required><br>
     <label for="category">Category:</label>
     <select  class="category" name="category" id="category">
         <option>Select Category</option>

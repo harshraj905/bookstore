@@ -1,4 +1,9 @@
 <?php
+
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
+
 include '../db.php';  // Database connection
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -7,12 +12,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $author = $_POST['author'];
     $price = $_POST['price'];
+    $originalprice = $_POST['originalprice'];
+    $discount = $_POST['discount'];
     $category = $_POST['category'];
 
     // Update product in database
-    $sql = "UPDATE products SET name = ?, author = ?, price = ?, category = ? WHERE id = ?";
+    $sql = "UPDATE products SET name = ?, author = ?, price = ?, originalprice = ?, discount = ?, category = ? WHERE id = ?";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ssssi", $name, $author, $price, $category, $id);
+    $stmt->bind_param("ssssisi", $name, $author, $price, $originalprice, $discount, $category, $id);
     $stmt->execute();
 
     if ($stmt->affected_rows > 0) {

@@ -71,14 +71,14 @@
                     <nav class="off-canvas-nav">
                         <ul class="mobile-menu menu-block-2">
                             <li class="menu-item-has-children">
-                                <a href="#">Currency - USD $ <i class="fas fa-angle-down"></i></a>
+                                <a href="#">Currency - INR ₹ </a>
                                 <ul class="sub-menu">
                                     <li> <a href="cart.php">USD $</a></li>
                                     <li> <a href="checkout.php">EUR €</a></li>
                                 </ul>
                             </li>
                             <li class="menu-item-has-children">
-                                <a href="#">Lang - Eng<i class="fas fa-angle-down"></i></a>
+                                <a href="#">Lang - Eng</a>
                                 <ul class="sub-menu">
                                     <li>Eng</li>
                                     <li>Ban</li>
@@ -163,7 +163,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div id="google-map"></div>
+                        <div id=""><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235014.15049961975!2d72.5797426!3d23.0202434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1715236764862!5m2!1sen!2sin" width="1100" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                     </div>
                 </div>
                 <div class="row mt--60 ">

@@ -477,12 +477,12 @@ jQuery(document).ready(function($) {
 	if($('#google-map').length){
 		function initMap() {
 			// The location of Uluru
-			var uluru = {lat: 21.0277214, lng: 105.8342015};
+			var ahmedabad = {lat: 23.033863, lng: 72.585022};
 			// The map, centered at Uluru
 			var map = new google.maps.Map(
-				document.getElementById('google-map'), {zoom: 12, center: uluru});
+				document.getElementById('google-map'), {zoom: 12, center: ahmedabad});
 			// The marker, positioned at Uluru
-			var marker = new google.maps.Marker({position: uluru, map: map});
+			var marker = new google.maps.Marker({position: ahmedabad, map: map});
 		}
 		initMap();
 	}

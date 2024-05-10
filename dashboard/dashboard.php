@@ -812,18 +812,16 @@
                             <!-- BEGIN: Official Store -->
                             <div class="col-span-12 mt-6 xl:col-span-8">
                                 <div class="intro-y block h-10 items-center sm:flex">
-                                    <h2 class="mr-5 truncate text-lg font-medium">Official Store</h2>
+                                    <h2 class="mr-5 truncate text-lg font-medium">Location</h2>
                                     <div class="relative mt-3 text-slate-500 sm:ml-auto sm:mt-0">
                                         <i data-tw-merge="" data-lucide="map-pin" class="stroke-1.5 absolute inset-y-0 left-0 z-10 my-auto ml-3 h-4 w-4"></i>
-                                        <input data-tw-merge="" type="text" placeholder="Filter by city" class="disabled:bg-slate-100 disabled:cursor-not-allowed dark:disabled:bg-darkmode-800/50 dark:disabled:border-transparent [&[readonly]]:bg-slate-100 [&[readonly]]:cursor-not-allowed [&[readonly]]:dark:bg-darkmode-800/50 [&[readonly]]:dark:border-transparent transition duration-200 ease-in-out w-full text-sm border-slate-200 shadow-sm rounded-md placeholder:text-slate-400/90 focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus:border-primary focus:border-opacity-40 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 dark:placeholder:text-slate-500/80 group-[.form-inline]:flex-1 group-[.input-group]:rounded-none group-[.input-group]:[&:not(:first-child)]:border-l-transparent group-[.input-group]:first:rounded-l group-[.input-group]:last:rounded-r group-[.input-group]:z-10 !box pl-10 sm:w-56">
+                                        
                                     </div>
                                 </div>
                                 <div class="intro-y box mt-12 p-5 sm:mt-5">
                                     <div>
-                                        250 Official stores in 21 countries, click the marker to see
-                                        location details.
                                     </div>
-                                    <div data-lat="-6.2425342" data-long="106.8626478" data-sources="" data-api-key="1e86fd5a7f60486a8e899411776f60d5" class="leaflet z-0 [&_.leaflet-tile-pane]:saturate-[.3] mt-5 h-[310px] rounded-md bg-slate-200">
+                                    <div data-lat="23.033863" data-long="72.585022" data-sources="" data-api-key="1e86fd5a7f60486a8e899411776f60d5" class="leaflet z-0 [&_.leaflet-tile-pane]:saturate-[.3] mt-5 h-[310px] rounded-md bg-slate-200">
                                     </div>
                                 </div>
                             </div>

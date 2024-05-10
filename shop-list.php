@@ -1,4 +1,5 @@
 <?php include_once "masterheader.php"; ?>
+<?php include "db.php" ?>
 
 <body>
 	<div class="site-wrapper" id="top">
@@ -381,13 +382,20 @@
 				</div>
 			</div>
 		</section>
+
+		<?php
+$sql = "SELECT * FROM products";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) { ?>
+
 		<main class="inner-page-sec-padding-bottom">
 			<div class="container">
 				<div class="shop-toolbar mb--30">
 					<div class="row align-items-center">
 						<div class="col-lg-2 col-md-2 col-sm-6">
 							<!-- Product View Mode -->
-							<div class="product-view-mode">
+							<!-- <div class="product-view-mode">
 								<a href="#" class="sorting-btn" data-target="grid"><i class="fas fa-th"></i></a>
 								<a href="#" class="sorting-btn" data-target="grid-four">
 									<span class="grid-four-icon">
@@ -396,172 +404,62 @@
 								</a>
 								<a href="#" class="sorting-btn active" data-target="list "><i
 										class="fas fa-list"></i></a>
-							</div>
+							</div> -->
 						</div>
-						<div class="col-xl-5 col-md-4 col-sm-6  mt--10 mt-sm--0">
-							<span class="toolbar-status">
-								Showing 1 to 9 of 14 (2 Pages)
-							</span>
-						</div>
-						<div class="col-lg-2 col-md-2 col-sm-6  mt--10 mt-md--0">
-							<div class="sorting-selection">
-								<span>Show:</span>
-								<select class="form-control nice-select sort-select">
-									<option value="" selected="selected">3</option>
-									<option value="">9</option>
-									<option value="">5</option>
-									<option value="">10</option>
-									<option value="">12</option>
-								</select>
-							</div>
-						</div>
-						<div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 mt--10 mt-md--0 ">
-							<div class="sorting-selection">
-								<span>Sort By:</span>
-								<select class="form-control nice-select sort-select mr-0">
-									<option value="" selected="selected">Default Sorting</option>
-									<option value="">Sort
-										By:Name (A - Z)</option>
-									<option value="">Sort
-										By:Name (Z - A)</option>
-									<option value="">Sort
-										By:Price (Low &gt; High)</option>
-									<option value="">Sort
-										By:Price (High &gt; Low)</option>
-									<option value="">Sort
-										By:Rating (Highest)</option>
-									<option value="">Sort
-										By:Rating (Lowest)</option>
-									<option value="">Sort
-										By:Model (A - Z)</option>
-									<option value="">Sort
-										By:Model (Z - A)</option>
-								</select>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="shop-toolbar d-none">
-					<div class="row align-items-center">
-						<div class="col-lg-2 col-md-2 col-sm-6">
-							<!-- Product View Mode -->
-							<div class="product-view-mode">
-								<a href="#" class="sorting-btn active" data-target="grid"><i class="fas fa-th"></i></a>
-								<a href="#" class="sorting-btn" data-target="grid-four">
-									<span class="grid-four-icon">
-										<i class="fas fa-grip-vertical"></i><i class="fas fa-grip-vertical"></i>
-									</span>
-								</a>
-								<a href="#" class="sorting-btn" data-target="list "><i class="fas fa-list"></i></a>
-							</div>
-						</div>
-						<div class="col-xl-5 col-md-4 col-sm-6  mt--10 mt-sm--0">
-							<span class="toolbar-status">
-								Showing 1 to 9 of 14 (2 Pages)
-							</span>
-						</div>
-						<div class="col-lg-2 col-md-2 col-sm-6  mt--10 mt-md--0">
-							<div class="sorting-selection">
-								<span>Show:</span>
-								<select class="form-control nice-select sort-select">
-									<option value="" selected="selected">3</option>
-									<option value="">9</option>
-									<option value="">5</option>
-									<option value="">10</option>
-									<option value="">12</option>
-								</select>
-							</div>
-						</div>
-						<div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 mt--10 mt-md--0 ">
-							<div class="sorting-selection">
-								<span>Sort By:</span>
-								<select class="form-control nice-select sort-select mr-0">
-									<option value="" selected="selected">Default Sorting</option>
-									<option value="">Sort
-										By:Name (A - Z)</option>
-									<option value="">Sort
-										By:Name (Z - A)</option>
-									<option value="">Sort
-										By:Price (Low &gt; High)</option>
-									<option value="">Sort
-										By:Price (High &gt; Low)</option>
-									<option value="">Sort
-										By:Rating (Highest)</option>
-									<option value="">Sort
-										By:Rating (Lowest)</option>
-									<option value="">Sort
-										By:Model (A - Z)</option>
-									<option value="">Sort
-										By:Model (Z - A)</option>
-								</select>
-							</div>
-						</div>
-					</div>
-				</div>
+						
+						<?php while ($row = $result->fetch_assoc()) { ?>
+
 				<div class="shop-product-wrap list with-pagination row space-db--30 shop-border">
 					<div class="col-lg-4 col-sm-6">
 						<div class="product-card card-style-list">
 							<div class="product-grid-content">
 								<div class="product-header">
 									<a href="" class="author">
-										Epple
+										<?php echo htmlspecialchars($row['author']); ?>
 									</a>
-									<h3><a href="product-details.php">Here Is A Quick Cure For Book</a></h3>
+									<h3><a href="<?php echo htmlspecialchars($row['link']); ?>" target=”_blank”><?php echo htmlspecialchars($row['name']); ?></a></h3>
 								</div>
 								<div class="product-card--body">
 									<div class="card-image">
-										<img src="image/products/product-2.jpg" alt="">
+										<img src="<?php echo htmlspecialchars($row['image_url']); ?>" alt="<?php echo htmlspecialchars($row['name']); ?>">
 										<div class="hover-contents">
-											<a href="product-details.php" class="hover-image">
-												<img src="image/products/product-1.jpg" alt="">
+											<a href="<?php echo htmlspecialchars($row['link']); ?>" target=”_blank” class="hover-image">
+												<img src="<?php echo htmlspecialchars($row['image_url']); ?>" alt="<?php echo htmlspecialchars($row['name']); ?>">
 											</a>
 											<div class="hover-btns">
-												<a href="cart.php" class="single-btn">
+												<a href="<?php echo htmlspecialchars($row['link']); ?>" target=”_blank” class="single-btn">
 													<i class="fas fa-shopping-basket"></i>
 												</a>
-												<a href="wishlist.php" class="single-btn">
-													<i class="fas fa-heart"></i>
-												</a>
-												<a href="compare.php" class="single-btn">
-													<i class="fas fa-random"></i>
-												</a>
-												<a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-													class="single-btn">
-													<i class="fas fa-eye"></i>
-												</a>
+												
 											</div>
 										</div>
 									</div>
 									<div class="price-block">
-										<span class="price">₹51.20</span>
-										<del class="price-old">₹51.20</del>
-										<span class="price-discount">20%</span>
+										<span class="price">₹<?php echo htmlspecialchars($row['price']); ?></span>
+										<del class="price-old">₹<?php echo htmlspecialchars($row['originalprice']); ?></del>
+										<span class="price-discount"><?php echo htmlspecialchars($row['discount']); ?>%</span>
 									</div>
 								</div>
 							</div>
+
+								
+
 							<div class="product-list-content">
 								<div class="card-image">
-									<img src="image/products/product-3.jpg" alt="">
+									<img src="<?php echo htmlspecialchars($row['image_url']); ?>" alt="<?php echo htmlspecialchars($row['name']); ?>">
 								</div>
 								<div class="product-card--body">
 									<div class="product-header">
 										<a href="" class="author">
-											Gpple
+											<?php echo htmlspecialchars($row['author']); ?>
 										</a>
-										<h3><a href="product-details.php" tabindex="0">Qpple cPad with Retina Display
-												MD510LL/A</a></h3>
+										<h3><a href="<?php echo htmlspecialchars($row['link']); ?>" target=”_blank” tabindex="0"><?php echo htmlspecialchars($row['name']); ?></a></h3>
 									</div>
-									<article>
-										<h2 class="sr-only">Card List Article</h2>
-										<p>More room to move. With 80GB or 160GB of storage and up to 40 hours of
-											battery life, the new iPod classic
-											lets you enjoy
-											up to 40,000 songs or..</p>
-									</article>
+									
 									<div class="price-block">
-										<span class="price">₹51.20</span>
-										<del class="price-old">₹51.20</del>
-										<span class="price-discount">20%</span>
+										<span class="price">₹<?php echo htmlspecialchars($row['price']); ?></span>
+										<del class="price-old">₹<?php echo htmlspecialchars($row['originalprice']); ?></del>
+										<span class="price-discount"><?php echo htmlspecialchars($row['discount']); ?>%</span>
 									</div>
 									<div class="rating-block">
 										<span class="fas fa-star star_on"></span>
@@ -571,575 +469,25 @@
 										<span class="fas fa-star "></span>
 									</div>
 									<div class="btn-block">
-										<a href="" class="btn btn-outlined">Add To Cart</a>
-										<a href="" class="card-link"><i class="fas fa-heart"></i> Add To Wishlist</a>
-										<a href="" class="card-link"><i class="fas fa-random"></i> Add To Cart</a>
+										<a href="<?php echo htmlspecialchars($row['link']); ?>" target=”_blank” class="btn btn-outlined">Buy Now On Amazon</a>
+										
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-sm-6">
-						<div class="product-card card-style-list">
-							<div class="product-grid-content">
-								<div class="product-header">
-									<a href="" class="author">
-										Lpple
-									</a>
-									<h3><a href="product-details.php">Simple Things You To Save BOOK</a></h3>
-								</div>
-								<div class="product-card--body">
-									<div class="card-image">
-										<img src="image/products/product-4.jpg" alt="">
-										<div class="hover-contents">
-											<a href="product-details.php" class="hover-image">
-												<img src="image/products/product-5.jpg" alt="">
-											</a>
-											<div class="hover-btns">
-												<a href="cart.php" class="single-btn">
-													<i class="fas fa-shopping-basket"></i>
-												</a>
-												<a href="wishlist.php" class="single-btn">
-													<i class="fas fa-heart"></i>
-												</a>
-												<a href="compare.php" class="single-btn">
-													<i class="fas fa-random"></i>
-												</a>
-												<a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-													class="single-btn">
-													<i class="fas fa-eye"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-									<div class="price-block">
-										<span class="price">₹51.20</span>
-										<del class="price-old">₹51.20</del>
-										<span class="price-discount">20%</span>
-									</div>
-								</div>
-							</div>
-							<div class="product-list-content">
-								<div class="card-image">
-									<img src="image/products/product-6.jpg" alt="">
-								</div>
-								<div class="product-card--body">
-									<div class="product-header">
-										<a href="" class="author">
-											fpple
-										</a>
-										<h3><a href="product-details.php" tabindex="0">Apple iPad with Retina Display
-												MD510LL/A</a></h3>
-									</div>
-									<article>
-										<h2 class="sr-only">Card List Article</h2>
-										<p>More room to move. With 80GB or 160GB of storage and up to 40 hours of
-											battery life, the new iPod classic
-											lets you enjoy
-											up to 40,000 songs or..</p>
-									</article>
-									<div class="price-block">
-										<span class="price">₹51.20</span>
-										<del class="price-old">₹51.20</del>
-										<span class="price-discount">20%</span>
-									</div>
-									<div class="rating-block">
-										<span class="fas fa-star star_on"></span>
-										<span class="fas fa-star star_on"></span>
-										<span class="fas fa-star star_on"></span>
-										<span class="fas fa-star star_on"></span>
-										<span class="fas fa-star "></span>
-									</div>
-									<div class="btn-block">
-										<a href="" class="btn btn-outlined">Add To Cart</a>
-										<a href="" class="card-link"><i class="fas fa-heart"></i> Add To Wishlist</a>
-										<a href="" class="card-link"><i class="fas fa-random"></i> Add To Cart</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-sm-6">
-						<div class="product-card card-style-list">
-							<div class="product-grid-content">
-								<div class="product-header">
-									<a href="" class="author">
-										Cpple
-									</a>
-									<h3><a href="product-details.php">3 Ways Create Better BOOK With</a></h3>
-								</div>
-								<div class="product-card--body">
-									<div class="card-image">
-										<img src="image/products/product-7.jpg" alt="">
-										<div class="hover-contents">
-											<a href="product-details.php" class="hover-image">
-												<img src="image/products/product-8.jpg" alt="">
-											</a>
-											<div class="hover-btns">
-												<a href="cart.php" class="single-btn">
-													<i class="fas fa-shopping-basket"></i>
-												</a>
-												<a href="wishlist.php" class="single-btn">
-													<i class="fas fa-heart"></i>
-												</a>
-												<a href="compare.php" class="single-btn">
-													<i class="fas fa-random"></i>
-												</a>
-												<a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-													class="single-btn">
-													<i class="fas fa-eye"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-									<div class="price-block">
-										<span class="price">₹51.20</span>
-										<del class="price-old">₹51.20</del>
-										<span class="price-discount">20%</span>
-									</div>
-								</div>
-							</div>
-							<div class="product-list-content">
-								<div class="card-image">
-									<img src="image/products/product-7.jpg" alt="">
-								</div>
-								<div class="product-card--body">
-									<div class="product-header">
-										<a href="" class="author">
-											Apple
-										</a>
-										<h3><a href="product-details.php" tabindex="0">Apple iPad with Retina Display
-												MD510LL/A</a></h3>
-									</div>
-									<article>
-										<h2 class="sr-only">Card List Article</h2>
-										<p>More room to move. With 80GB or 160GB of storage and up to 40 hours of
-											battery life, the new iPod classic
-											lets you enjoy
-											up to 40,000 songs or..</p>
-									</article>
-									<div class="price-block">
-										<span class="price">₹51.20</span>
-										<del class="price-old">₹51.20</del>
-										<span class="price-discount">20%</span>
-									</div>
-									<div class="rating-block">
-										<span class="fas fa-star star_on"></span>
-										<span class="fas fa-star star_on"></span>
-										<span class="fas fa-star star_on"></span>
-										<span class="fas fa-star star_on"></span>
-										<span class="fas fa-star "></span>
-									</div>
-									<div class="btn-block">
-										<a href="" class="btn btn-outlined">Add To Cart</a>
-										<a href="" class="card-link"><i class="fas fa-heart"></i> Add To Wishlist</a>
-										<a href="" class="card-link"><i class="fas fa-random"></i> Add To Cart</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-sm-6">
-						<div class="product-card card-style-list">
-							<div class="product-grid-content">
-								<div class="product-header">
-									<a href="" class="author">
-										Rpple
-									</a>
-									<h3><a href="product-details.php">Simple Things You To Save BOOK</a></h3>
-								</div>
-								<div class="product-card--body">
-									<div class="card-image">
-										<img src="image/products/product-8.jpg" alt="">
-										<div class="hover-contents">
-											<a href="product-details.php" class="hover-image">
-												<img src="image/products/product-7.jpg" alt="">
-											</a>
-											<div class="hover-btns">
-												<a href="cart.php" class="single-btn">
-													<i class="fas fa-shopping-basket"></i>
-												</a>
-												<a href="wishlist.php" class="single-btn">
-													<i class="fas fa-heart"></i>
-												</a>
-												<a href="compare.php" class="single-btn">
-													<i class="fas fa-random"></i>
-												</a>
-												<a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-													class="single-btn">
-													<i class="fas fa-eye"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-									<div class="price-block">
-										<span class="price">₹51.20</span>
-										<del class="price-old">₹51.20</del>
-										<span class="price-discount">20%</span>
-									</div>
-								</div>
-							</div>
-							<div class="product-list-content">
-								<div class="card-image">
-									<img src="image/products/product-8.jpg" alt="">
-								</div>
-								<div class="product-card--body">
-									<div class="product-header">
-										<a href="" class="author">
-											Apple
-										</a>
-										<h3><a href="product-details.php" tabindex="0">Apple iPad with Retina Display
-												MD510LL/A</a></h3>
-									</div>
-									<article>
-										<h2 class="sr-only">Card List Article</h2>
-										<p>More room to move. With 80GB or 160GB of storage and up to 40 hours of
-											battery life, the new iPod classic
-											lets you enjoy
-											up to 40,000 songs or..</p>
-									</article>
-									<div class="price-block">
-										<span class="price">₹51.20</span>
-										<del class="price-old">₹51.20</del>
-										<span class="price-discount">20%</span>
-									</div>
-									<div class="rating-block">
-										<span class="fas fa-star star_on"></span>
-										<span class="fas fa-star star_on"></span>
-										<span class="fas fa-star star_on"></span>
-										<span class="fas fa-star star_on"></span>
-										<span class="fas fa-star "></span>
-									</div>
-									<div class="btn-block">
-										<a href="" class="btn btn-outlined">Add To Cart</a>
-										<a href="" class="card-link"><i class="fas fa-heart"></i> Add To Wishlist</a>
-										<a href="" class="card-link"><i class="fas fa-random"></i> Add To Cart</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-sm-6">
-						<div class="product-card card-style-list">
-							<div class="product-grid-content">
-								<div class="product-header">
-									<a href="" class="author">
-										Gpple
-									</a>
-									<h3><a href="product-details.php">How Deal With Very Bad BOOK</a></h3>
-								</div>
-								<div class="product-card--body">
-									<div class="card-image">
-										<img src="image/products/product-9.jpg" alt="">
-										<div class="hover-contents">
-											<a href="product-details.php" class="hover-image">
-												<img src="image/products/product-10.jpg" alt="">
-											</a>
-											<div class="hover-btns">
-												<a href="cart.php" class="single-btn">
-													<i class="fas fa-shopping-basket"></i>
-												</a>
-												<a href="wishlist.php" class="single-btn">
-													<i class="fas fa-heart"></i>
-												</a>
-												<a href="compare.php" class="single-btn">
-													<i class="fas fa-random"></i>
-												</a>
-												<a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-													class="single-btn">
-													<i class="fas fa-eye"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-									<div class="price-block">
-										<span class="price">₹51.20</span>
-										<del class="price-old">₹51.20</del>
-										<span class="price-discount">20%</span>
-									</div>
-								</div>
-							</div>
-							<div class="product-list-content">
-								<div class="card-image">
-									<img src="image/products/product-9.jpg" alt="">
-								</div>
-								<div class="product-card--body">
-									<div class="product-header">
-										<a href="" class="author">
-											Apple
-										</a>
-										<h3><a href="product-details.php" tabindex="0">Apple iPad with Retina Display
-												MD510LL/A</a></h3>
-									</div>
-									<article>
-										<h2 class="sr-only">Card List Article</h2>
-										<p>More room to move. With 80GB or 160GB of storage and up to 40 hours of
-											battery life, the new iPod classic
-											lets you enjoy
-											up to 40,000 songs or..</p>
-									</article>
-									<div class="price-block">
-										<span class="price">₹51.20</span>
-										<del class="price-old">₹51.20</del>
-										<span class="price-discount">20%</span>
-									</div>
-									<div class="rating-block">
-										<span class="fas fa-star star_on"></span>
-										<span class="fas fa-star star_on"></span>
-										<span class="fas fa-star star_on"></span>
-										<span class="fas fa-star star_on"></span>
-										<span class="fas fa-star "></span>
-									</div>
-									<div class="btn-block">
-										<a href="" class="btn btn-outlined">Add To Cart</a>
-										<a href="" class="card-link"><i class="fas fa-heart"></i> Add To Wishlist</a>
-										<a href="" class="card-link"><i class="fas fa-random"></i> Add To Cart</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-sm-6">
-						<div class="product-card card-style-list">
-							<div class="product-grid-content">
-								<div class="product-header">
-									<a href="" class="author">
-										Rtpple
-									</a>
-									<h3><a href="product-details.php">The Hidden Mystery Behind</a></h3>
-								</div>
-								<div class="product-card--body">
-									<div class="card-image">
-										<img src="image/products/product-10.jpg" alt="">
-										<div class="hover-contents">
-											<a href="product-details.php" class="hover-image">
-												<img src="image/products/product-9.jpg" alt="">
-											</a>
-											<div class="hover-btns">
-												<a href="cart.php" class="single-btn">
-													<i class="fas fa-shopping-basket"></i>
-												</a>
-												<a href="wishlist.php" class="single-btn">
-													<i class="fas fa-heart"></i>
-												</a>
-												<a href="compare.php" class="single-btn">
-													<i class="fas fa-random"></i>
-												</a>
-												<a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-													class="single-btn">
-													<i class="fas fa-eye"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-									<div class="price-block">
-										<span class="price">₹51.20</span>
-										<del class="price-old">₹51.20</del>
-										<span class="price-discount">20%</span>
-									</div>
-								</div>
-							</div>
-							<div class="product-list-content">
-								<div class="card-image">
-									<img src="image/products/product-10.jpg" alt="">
-								</div>
-								<div class="product-card--body">
-									<div class="product-header">
-										<a href="" class="author">
-											Apple
-										</a>
-										<h3><a href="product-details.php" tabindex="0">Apple iPad with Retina Display
-												MD510LL/A</a></h3>
-									</div>
-									<article>
-										<h2 class="sr-only">Card List Article</h2>
-										<p>More room to move. With 80GB or 160GB of storage and up to 40 hours of
-											battery life, the new iPod classic
-											lets you enjoy
-											up to 40,000 songs or..</p>
-									</article>
-									<div class="price-block">
-										<span class="price">₹51.20</span>
-										<del class="price-old">₹51.20</del>
-										<span class="price-discount">20%</span>
-									</div>
-									<div class="rating-block">
-										<span class="fas fa-star star_on"></span>
-										<span class="fas fa-star star_on"></span>
-										<span class="fas fa-star star_on"></span>
-										<span class="fas fa-star star_on"></span>
-										<span class="fas fa-star "></span>
-									</div>
-									<div class="btn-block">
-										<a href="" class="btn btn-outlined">Add To Cart</a>
-										<a href="" class="card-link"><i class="fas fa-heart"></i> Add To Wishlist</a>
-										<a href="" class="card-link"><i class="fas fa-random"></i> Add To Cart</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-sm-6">
-						<div class="product-card card-style-list">
-							<div class="product-grid-content">
-								<div class="product-header">
-									<a href="" class="author">
-										Upple
-									</a>
-									<h3><a href="product-details.php">Little Known Ways To Rid Yourself</a></h3>
-								</div>
-								<div class="product-card--body">
-									<div class="card-image">
-										<img src="image/products/product-11.jpg" alt="">
-										<div class="hover-contents">
-											<a href="product-details.php" class="hover-image">
-												<img src="image/products/product-12.jpg" alt="">
-											</a>
-											<div class="hover-btns">
-												<a href="cart.php" class="single-btn">
-													<i class="fas fa-shopping-basket"></i>
-												</a>
-												<a href="wishlist.php" class="single-btn">
-													<i class="fas fa-heart"></i>
-												</a>
-												<a href="compare.php" class="single-btn">
-													<i class="fas fa-random"></i>
-												</a>
-												<a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-													class="single-btn">
-													<i class="fas fa-eye"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-									<div class="price-block">
-										<span class="price">₹51.20</span>
-										<del class="price-old">₹51.20</del>
-										<span class="price-discount">20%</span>
-									</div>
-								</div>
-							</div>
-							<div class="product-list-content">
-								<div class="card-image">
-									<img src="image/products/product-11.jpg" alt="">
-								</div>
-								<div class="product-card--body">
-									<div class="product-header">
-										<a href="" class="author">
-											Apple
-										</a>
-										<h3><a href="product-details.php" tabindex="0">Apple iPad with Retina Display
-												MD510LL/A</a></h3>
-									</div>
-									<article>
-										<h2 class="sr-only">Card List Article</h2>
-										<p>More room to move. With 80GB or 160GB of storage and up to 40 hours of
-											battery life, the new iPod classic
-											lets you enjoy
-											up to 40,000 songs or..</p>
-									</article>
-									<div class="price-block">
-										<span class="price">₹51.20</span>
-										<del class="price-old">₹51.20</del>
-										<span class="price-discount">20%</span>
-									</div>
-									<div class="rating-block">
-										<span class="fas fa-star star_on"></span>
-										<span class="fas fa-star star_on"></span>
-										<span class="fas fa-star star_on"></span>
-										<span class="fas fa-star star_on"></span>
-										<span class="fas fa-star "></span>
-									</div>
-									<div class="btn-block">
-										<a href="" class="btn btn-outlined">Add To Cart</a>
-										<a href="" class="card-link"><i class="fas fa-heart"></i> Add To Wishlist</a>
-										<a href="" class="card-link"><i class="fas fa-random"></i> Add To Cart</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-sm-6">
-						<div class="product-card card-style-list">
-							<div class="product-grid-content">
-								<div class="product-header">
-									<a href="" class="author">
-										Bpple
-									</a>
-									<h3><a href="product-details.php">Qple GPad with Retina Sisplay</a></h3>
-								</div>
-								<div class="product-card--body">
-									<div class="card-image">
-										<img src="image/products/product-2.jpg" alt="">
-										<div class="hover-contents">
-											<a href="product-details.php" class="hover-image">
-												<img src="image/products/product-1.jpg" alt="">
-											</a>
-											<div class="hover-btns">
-												<a href="cart.php" class="single-btn">
-													<i class="fas fa-shopping-basket"></i>
-												</a>
-												<a href="wishlist.php" class="single-btn">
-													<i class="fas fa-heart"></i>
-												</a>
-												<a href="compare.php" class="single-btn">
-													<i class="fas fa-random"></i>
-												</a>
-												<a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-													class="single-btn">
-													<i class="fas fa-eye"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-									<div class="price-block">
-										<span class="price">₹51.20</span>
-										<del class="price-old">₹51.20</del>
-										<span class="price-discount">20%</span>
-									</div>
-								</div>
-							</div>
-							<div class="product-list-content">
-								<div class="card-image">
-									<img src="image/products/product-2.jpg" alt="">
-								</div>
-								<div class="product-card--body">
-									<div class="product-header">
-										<a href="" class="author">
-											Apple
-										</a>
-										<h3><a href="product-details.php" tabindex="0">Apple iPad with Retina Display
-												MD510LL/A</a></h3>
-									</div>
-									<article>
-										<h2 class="sr-only">Card List Article</h2>
-										<p>More room to move. With 80GB or 160GB of storage and up to 40 hours of
-											battery life, the new iPod classic
-											lets you enjoy
-											up to 40,000 songs or..</p>
-									</article>
-									<div class="price-block">
-										<span class="price">₹51.20</span>
-										<del class="price-old">₹51.20</del>
-										<span class="price-discount">20%</span>
-									</div>
-									<div class="rating-block">
-										<span class="fas fa-star star_on"></span>
-										<span class="fas fa-star star_on"></span>
-										<span class="fas fa-star star_on"></span>
-										<span class="fas fa-star star_on"></span>
-										<span class="fas fa-star "></span>
-									</div>
-									<div class="btn-block">
-										<a href="" class="btn btn-outlined">Add To Cart</a>
-										<a href="" class="card-link"><i class="fas fa-heart"></i> Add To Wishlist</a>
-										<a href="" class="card-link"><i class="fas fa-random"></i> Add To Cart</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+
+
+					
 				</div>
+
+				<?php } ?>
+
+								<?php } else {
+    								echo "0 results";
+								}
+								$conn->close();
+								?>
 				<!-- Pagination Block -->
 				<div class="row pt--30">
 					<div class="col-md-12">

@@ -427,18 +427,9 @@ $visitorCount = getAndIncrementVisitorCount($conn);
                                         </li>
                                         <li class="cat-item"><a href="#">Perfomance Filters</a></li>
                                         <li class="cat-item has-children"><a href="#">Cookbooks</a>
-                                            <!-- <ul class="sub-menu">
-                                                <li><a href="">Brake Tools</a></li>
-                                                <li><a href="">Driveshafts</a></li>
-                                                <li><a href="">Emergency Brake</a></li>
-                                                <li><a href="">Spools</a></li>
-                                            </ul> -->
+                                            
                                         </li>
-                                        <!-- <li class="cat-item "><a href="#">Accessories</a></li>
-                                        <li class="cat-item "><a href="#">Education</a></li>
-                                        <li class="cat-item hidden-menu-item"><a href="#">Indoor Living</a></li>
-                                        <li class="cat-item"><a href="#" class="js-expand-hidden-menu">More
-                                                Categories</a></li> -->
+                                        
                                     </ul>
                                 </div>
                             </nav>
@@ -479,13 +470,7 @@ $visitorCount = getAndIncrementVisitorCount($conn);
                             <ul class="mobile-menu main-mobile-menu">
                                 <li class="menu-item-has-children">
                                     <a href="index.php">Home</a>
-                                    <!-- <ul class="sub-menu">
-                                        <li> <a href="index.php">Home One</a></li>
-                                        <li> <a href="index-2.php">Home Two</a></li>
-                                        <li> <a href="index-3.php">Home Three</a></li>
-                                        <li> <a href="index-4.php">Home Four</a></li>
-                                        <li> <a href="index-5.php">Home Five</a></li>
-                                    </ul> -->
+                                    
                                 </li>
                                 
                                 <li class="menu-item-has-children">
@@ -561,74 +546,16 @@ $visitorCount = getAndIncrementVisitorCount($conn);
                             <ul class="main-menu menu-right ">
                                 <li class="menu-item has-children">
                                     <a href="index.php">HOME </a>
-                                    <!-- <ul class="sub-menu">
-                                        <li> <a href="index.php">Home One</a></li>
-                                        <li> <a href="index-2.php">Home Two</a></li>
-                                        <li> <a href="index-3.php">Home Three</a></li>
-                                        <li> <a href="index-4.php">Home Four</a></li>
-                                        <li> <a href="index-5.php">Home Five</a></li>
-                                    </ul> -->
+                                    
                                 </li>
                                 <!-- Shop -->
                                 <li class="menu-item has-children mega-menu">
                                     <a href="shop-list.php">BOOKS </a>
-                                    <!-- <ul class="sub-menu four-column">
-                                        <li class="cus-col-25">
-                                            <h3 class="menu-title"><a href="javascript:void(0)">Shop Grid </a></h3>
-                                            <ul class="mega-single-block">
-                                                <li><a href="shop-grid.php">Fullwidth</a></li>
-                                                <li><a href="shop-grid-left-sidebar.php">left Sidebar</a></li>
-                                                <li><a href="shop-grid-right-sidebar.php">Right Sidebar</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="cus-col-25">
-                                            <h3 class="menu-title"> <a href="javascript:void(0)">Shop List</a></h3>
-                                            <ul class="mega-single-block">
-                                                <li><a href="shop-list.php">Fullwidth</a></li>
-                                                <li><a href="shop-list-left-sidebar.php">left Sidebar</a></li>
-                                                <li><a href="shop-list-right-sidebar.php">Right Sidebar</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="cus-col-25">
-                                            <h3 class="menu-title"> <a href="javascript:void(0)">Product Details 1</a>
-                                            </h3>
-                                            <ul class="mega-single-block">
-                                                <li><a href="product-details.php">Product Details Page</a></li>
-                                                <li><a href="product-details-affiliate.php">Product Details
-                                                        Affiliate</a></li>
-                                                <li><a href="product-details-group.php">Product Details Group</a></li>
-                                                <li><a href="product-details-variable.php">Product Details
-                                                        Variables</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="cus-col-25">
-                                            <h3 class="menu-title"><a href="javascript:void(0)">Product Details 2</a>
-                                            </h3>
-                                            <ul class="mega-single-block">
-                                                <li><a href="product-details-left-thumbnail.php">left Thumbnail</a>
-                                                </li>
-                                                <li><a href="product-details-right-thumbnail.php">Right Thumbnail</a>
-                                                </li>
-                                                <li><a href="product-details-left-gallery.php">Left Gallery</a></li>
-                                                <li><a href="product-details-right-gallery.php">Right Gallery</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li> -->
+                                    
                                 <!-- Pages -->
                                 <li class="menu-item has-children">
                                     <a href="author.php">AUTHORS </a>
-                                    <!-- <ul class="sub-menu">
-                                        <li><a href="cart.php">Cart</a></li>
-                                        <li><a href="checkout.php">Checkout</a></li>
-                                        <li><a href="compare.php">Compare</a></li>
-                                        <li><a href="wishlist.php">Wishlist</a></li>
-                                        <li><a href="login-register.php">Login Register</a></li>
-                                        <li><a href="my-account.php">My Account</a></li>
-                                        <li><a href="order-complete.php">Order Complete</a></li>
-                                        <li><a href="faq.php">Faq</a></li>
-                                        <li><a href="contact-2.php">contact 02</a></li>
-                                    </ul> -->
+                                    
                                 </li>
                                 <!-- Blog -->
                                 
@@ -713,929 +640,242 @@ $visitorCount = getAndIncrementVisitorCount($conn);
             </div>
         </section>
         <!--=================================
-    ARTS & PHOTOGRAPHY BOOKS
+    TEEN FICTION
 ===================================== -->
-        <section class="section-margin">
-            <div class="arts">
+        
+
+        <!-- BOOK 1 STARTS HERE -->
+<section class="teenfiction">
+      <?php
+$sql = "SELECT * FROM products WHERE sortby = 'teenfiction'";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) { ?>
+    <section class="section-margin">
+        <div class="arts">
             <div class="container">
                 <div class="section-title section-title--bordered">
-                    <h2>ARTS & PHOTOGRAPHY BOOKS</h2>
+                    <h2>TEEN FICTION</h2>
                 </div>
                 <div class="product-slider sb-slick-slider slider-border-single-row" data-slick-setting='{
-                        "autoplay": true,
-                        "autoplaySpeed": 8000,
-                        "slidesToShow": 5,
-                        "dots":true
-                    }' data-slick-responsive='[
-                        {"breakpoint":1200, "settings": {"slidesToShow": 4} },
-                        {"breakpoint":992, "settings": {"slidesToShow": 3} },
-                        {"breakpoint":768, "settings": {"slidesToShow": 2} },
-                        {"breakpoint":480, "settings": {"slidesToShow": 1} },
-                        {"breakpoint":320, "settings": {"slidesToShow": 1} }
-                    ]'>
-                    <div class="single-slide">
-                        <div class="product-card">
-                            <div class="product-header">
-                                <a href="" class="author">
-                                    Lpple
-                                </a>
-                                <h3><a href="product-details.php">Revolutionize Your BOOK With</a></h3>
-                            </div>
-                            <div class="product-card--body">
-                                <div class="card-image">
-                                    <img src="image/products/product-2.jpg" alt="">
-                                    <div class="hover-contents">
-                                        <a href="product-details.php" class="hover-image">
-                                            <img src="image/products/product-1.jpg" alt="">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a href="cart.php" class="single-btn">
-                                                <i class="fas fa-shopping-basket"></i>
+                    "autoplay": true,
+                    "autoplaySpeed": 8000,
+                    "slidesToShow": 5,
+                    "dots": true
+                }' data-slick-responsive='[
+                    {"breakpoint":1200, "settings": {"slidesToShow": 4}},
+                    {"breakpoint":992, "settings": {"slidesToShow": 3}},
+                    {"breakpoint":768, "settings": {"slidesToShow": 2}},
+                    {"breakpoint":480, "settings": {"slidesToShow": 1}},
+                    {"breakpoint":320, "settings": {"slidesToShow": 1}}
+                ]'>
+                    <?php while ($row = $result->fetch_assoc()) { ?>
+                        <div class="single-slide">
+                            <div class="product-card">
+                                <div class="product-header">
+                                    <a href="" class="author"><?php echo htmlspecialchars($row['author']); ?></a> 
+                                    <h3><a href="<?php echo htmlspecialchars($row['link']); ?>" target=”_blank”><?php echo htmlspecialchars($row['name']); ?></a></h3>
+                                </div>
+                                <div class="product-card--body">
+                                    <div class="card-image" >
+                                        <img  src="<?php echo htmlspecialchars($row['image_url']); ?>" alt="<?php echo htmlspecialchars($row['name']); ?>">
+                                        <div class="hover-contents">
+                                            <a href="<?php echo htmlspecialchars($row['link']); ?>"target=”_blank” class="hover-image">
+                                               
+                                                <img src="<?php echo htmlspecialchars($row['image_url']); ?>" alt="<?php echo htmlspecialchars($row['name']); ?>">
                                             </a>
-                                            <a href="wishlist.php" class="single-btn">
-                                                <i class="fas fa-heart"></i>
-                                            </a>
-                                            <a href="compare.php" class="single-btn">
-                                                <i class="fas fa-random"></i>
-                                            </a>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-                                                class="single-btn">
-                                                <i class="fas fa-eye"></i>
-                                            </a>
+                                            <div class="hover-btns">
+                                                <a href="<?php echo htmlspecialchars($row['link']); ?>" class="single-btn">
+                                                    <i class="fas fa-shopping-basket"><br>Buy Now On Amazon</i>
+                                                </a>
+                                                
+                                                
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="price-block">
-                                    <span class="price">₹51.20</span>
-                                    <del class="price-old">₹51.20</del>
-                                    <span class="price-discount">20%</span>
+                                    <div class="price-block">
+                                        <span class="price">₹<?php echo htmlspecialchars($row['price']); ?></span>  
+                                        <del class="price-old">₹<?php echo htmlspecialchars($row['originalprice']); ?></del>
+                                        <span class="price-discount"><?php echo htmlspecialchars($row['discount']); ?>%</span>  
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="single-slide">
-                        <div class="product-card">
-                            <div class="product-header">
-                                <a href="" class="author">
-                                    Jpple
-                                </a>
-                                <h3><a href="product-details.php">Turn Your BOOK Into High Machine</a>
-                                </h3>
-                            </div>
-                            <div class="product-card--body">
-                                <div class="card-image">
-                                    <img src="image/products/product-10.jpg" alt="">
-                                    <div class="hover-contents">
-                                        <a href="product-details.php" class="hover-image">
-                                            <img src="image/products/product-1.jpg" alt="">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a href="cart.php" class="single-btn">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.php" class="single-btn">
-                                                <i class="fas fa-heart"></i>
-                                            </a>
-                                            <a href="compare.php" class="single-btn">
-                                                <i class="fas fa-random"></i>
-                                            </a>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-                                                class="single-btn">
-                                                <i class="fas fa-eye"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="price-block">
-                                    <span class="price">₹51.20</span>
-                                    <del class="price-old">₹51.20</del>
-                                    <span class="price-discount">20%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-slide">
-                        <div class="product-card">
-                            <div class="product-header">
-                                <a href="" class="author">
-                                    Wpple
-                                </a>
-                                <h3><a href="product-details.php">3 Ways Create Better BOOK With</a></h3>
-                            </div>
-                            <div class="product-card--body">
-                                <div class="card-image">
-                                    <img src="image/products/product-3.jpg" alt="">
-                                    <div class="hover-contents">
-                                        <a href="product-details.php" class="hover-image">
-                                            <img src="image/products/product-2.jpg" alt="">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a href="cart.php" class="single-btn">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.php" class="single-btn">
-                                                <i class="fas fa-heart"></i>
-                                            </a>
-                                            <a href="compare.php" class="single-btn">
-                                                <i class="fas fa-random"></i>
-                                            </a>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-                                                class="single-btn">
-                                                <i class="fas fa-eye"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="price-block">
-                                    <span class="price">₹51.20</span>
-                                    <del class="price-old">₹51.20</del>
-                                    <span class="price-discount">20%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-slide">
-                        <div class="product-card">
-                            <div class="product-header">
-                                <a href="" class="author">
-                                    Epple
-                                </a>
-                                <h3><a href="product-details.php">What You Can Learn From Bill Gates</a>
-                                </h3>
-                            </div>
-                            <div class="product-card--body">
-                                <div class="card-image">
-                                    <img src="image/products/product-5.jpg" alt="">
-                                    <div class="hover-contents">
-                                        <a href="product-details.php" class="hover-image">
-                                            <img src="image/products/product-4.jpg" alt="">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a href="cart.php" class="single-btn">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.php" class="single-btn">
-                                                <i class="fas fa-heart"></i>
-                                            </a>
-                                            <a href="compare.php" class="single-btn">
-                                                <i class="fas fa-random"></i>
-                                            </a>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-                                                class="single-btn">
-                                                <i class="fas fa-eye"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="price-block">
-                                    <span class="price">₹51.20</span>
-                                    <del class="price-old">₹51.20</del>
-                                    <span class="price-discount">20%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-slide">
-                        <div class="product-card">
-                            <div class="product-header">
-                                <a href="" class="author">
-                                    Hpple
-                                </a>
-                                <h3><a href="product-details.php">a Half Very Simple Things You To</a></h3>
-                            </div>
-                            <div class="product-card--body">
-                                <div class="card-image">
-                                    <img src="image/products/product-6.jpg" alt="">
-                                    <div class="hover-contents">
-                                        <a href="product-details.php" class="hover-image">
-                                            <img src="image/products/product-4.jpg" alt="">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a href="cart.php" class="single-btn">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.php" class="single-btn">
-                                                <i class="fas fa-heart"></i>
-                                            </a>
-                                            <a href="compare.php" class="single-btn">
-                                                <i class="fas fa-random"></i>
-                                            </a>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-                                                class="single-btn">
-                                                <i class="fas fa-eye"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="price-block">
-                                    <span class="price">₹51.20</span>
-                                    <del class="price-old">₹51.20</del>
-                                    <span class="price-discount">20%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-slide">
-                        <div class="product-card">
-                            <div class="product-header">
-                                <a href="" class="author">
-                                    Bpple
-                                </a>
-                                <h3><a href="product-details.php">Here Is A Quick Cure For Book</a>
-                                </h3>
-                            </div>
-                            <div class="product-card--body">
-                                <div class="card-image">
-                                    <img src="image/products/product-8.jpg" alt="">
-                                    <div class="hover-contents">
-                                        <a href="product-details.php" class="hover-image">
-                                            <img src="image/products/product-7.jpg" alt="">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a href="cart.php" class="single-btn">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.php" class="single-btn">
-                                                <i class="fas fa-heart"></i>
-                                            </a>
-                                            <a href="compare.php" class="single-btn">
-                                                <i class="fas fa-random"></i>
-                                            </a>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-                                                class="single-btn">
-                                                <i class="fas fa-eye"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="price-block">
-                                    <span class="price">₹51.20</span>
-                                    <del class="price-old">₹51.20</del>
-                                    <span class="price-discount">20%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-slide">
-                        <div class="product-card">
-                            <div class="product-header">
-                                <a href="" class="author">
-                                    zpple
-                                </a>
-                                <h3><a href="product-details.php">BOOK: Do You Really Need It? This </a></h3>
-                            </div>
-                            <div class="product-card--body">
-                                <div class="card-image">
-                                    <img src="image/products/product-13.jpg" alt="">
-                                    <div class="hover-contents">
-                                        <a href="product-details.php" class="hover-image">
-                                            <img src="image/products/product-11.jpg" alt="">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a href="cart.php" class="single-btn">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.php" class="single-btn">
-                                                <i class="fas fa-heart"></i>
-                                            </a>
-                                            <a href="compare.php" class="single-btn">
-                                                <i class="fas fa-random"></i>
-                                            </a>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-                                                class="single-btn">
-                                                <i class="fas fa-eye"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="price-block">
-                                    <span class="price">₹51.20</span>
-                                    <del class="price-old">₹51.20</del>
-                                    <span class="price-discount">20%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <?php } ?>
+                </div>  
             </div>
-            </div>
-        </section>
+        </div>
+    </section>
+<?php } else {
+    echo "0 results";
+}
+
+?>
+
+</section>
+
+
+
+                     <!-- BOOK 1 ENDS HERE -->
+
+
+<section class="mysteries">
+                   
         <!--=================================
-    CHILDREN’S BOOKS
+    MYSTERY BOOKS
 ===================================== -->
-        <section class="section-margin">
-            <div class="childern">
+
+        <!-- BOOK 2 STARTS HERE -->
+
+        <?php
+$sql = "SELECT * FROM products WHERE sortby = 'mysteries'";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) { ?>
+    <section class="section-margin">
+        <div class="arts">
             <div class="container">
                 <div class="section-title section-title--bordered">
-                    <h2>CHILDREN’S BOOKS</h2>
+                    <h2>MYSTERY BOOKS</h2>
                 </div>
                 <div class="product-slider sb-slick-slider slider-border-single-row" data-slick-setting='{
-                        "autoplay": true,
-                        "autoplaySpeed": 8000,
-                        "slidesToShow": 5,
-                        "dots":true
-                    }' data-slick-responsive='[
-                        {"breakpoint":1200, "settings": {"slidesToShow": 4} },
-                        {"breakpoint":992, "settings": {"slidesToShow": 3} },
-                        {"breakpoint":768, "settings": {"slidesToShow": 2} },
-                        {"breakpoint":480, "settings": {"slidesToShow": 1} },
-                        {"breakpoint":320, "settings": {"slidesToShow": 1} }
-                    ]'>
-                    <div class="single-slide">
-                        <div class="product-card">
-                            <div class="product-header">
-                                <a href="" class="author">
-                                    Lpple
-                                </a>
-                                <h3><a href="product-details.php">Revolutionize Your BOOK With</a></h3>
-                            </div>
-                            <div class="product-card--body">
-                                <div class="card-image">
-                                    <img src="image/products/product-1.jpg" alt="">
-                                    <div class="hover-contents">
-                                        <a href="product-details.php" class="hover-image">
-                                            <img src="image/products/product-1.jpg" alt="">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a href="cart.php" class="single-btn">
-                                                <i class="fas fa-shopping-basket"></i>
+                    "autoplay": true,
+                    "autoplaySpeed": 8000,
+                    "slidesToShow": 5,
+                    "dots": true
+                }' data-slick-responsive='[
+                    {"breakpoint":1200, "settings": {"slidesToShow": 4}},
+                    {"breakpoint":992, "settings": {"slidesToShow": 3}},
+                    {"breakpoint":768, "settings": {"slidesToShow": 2}},
+                    {"breakpoint":480, "settings": {"slidesToShow": 1}},
+                    {"breakpoint":320, "settings": {"slidesToShow": 1}}
+                ]'>
+                    <?php while ($row = $result->fetch_assoc()) { ?>
+                        <div class="single-slide">
+                            <div class="product-card">
+                                <div class="product-header">
+                                    <a href="" class="author"><?php echo htmlspecialchars($row['author']); ?></a> 
+                                    <h3><a href="<?php echo htmlspecialchars($row['link']); ?>" target=”_blank”><?php echo htmlspecialchars($row['name']); ?></a></h3>
+                                </div>
+                                <div class="product-card--body">
+                                    <div class="card-image">
+                                        <img src="<?php echo htmlspecialchars($row['image_url']); ?>" alt="<?php echo htmlspecialchars($row['name']); ?>">
+                                        <div class="hover-contents">
+                                            <a href="<?php echo htmlspecialchars($row['link']); ?>" target=”_blank” class="hover-image">
+                                                <!-- Ensure you have the correct field for hover image if it's not meant to be the email -->
+                                                <img src="<?php echo htmlspecialchars($row['image_url']); ?>" alt="<?php echo htmlspecialchars($row['name']); ?>">
                                             </a>
-                                            <a href="wishlist.php" class="single-btn">
-                                                <i class="fas fa-heart"></i>
-                                            </a>
-                                            <a href="compare.php" class="single-btn">
-                                                <i class="fas fa-random"></i>
-                                            </a>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-                                                class="single-btn">
-                                                <i class="fas fa-eye"></i>
-                                            </a>
+                                            <div class="hover-btns">
+                                                <a href="<?php echo htmlspecialchars($row['link']); ?>" class="single-btn">
+                                                    <i class="fas fa-shopping-basket"><br>Buy Now On Amazon</i>
+                                                </a>
+                                                
+                                                
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="price-block">
-                                    <span class="price">₹51.20</span>
-                                    <del class="price-old">₹51.20</del>
-                                    <span class="price-discount">20%</span>
+                                    <div class="price-block">
+                                        <span class="price">₹<?php echo htmlspecialchars($row['price']); ?></span>  
+                                        <del class="price-old">₹<?php echo htmlspecialchars($row['originalprice']); ?></del>
+                                        <span class="price-discount"><?php echo htmlspecialchars($row['discount']); ?>%</span>  
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="single-slide">
-                        <div class="product-card">
-                            <div class="product-header">
-                                <a href="" class="author">
-                                    Jpple
-                                </a>
-                                <h3><a href="product-details.php">Turn Your BOOK Into High Machine</a>
-                                </h3>
-                            </div>
-                            <div class="product-card--body">
-                                <div class="card-image">
-                                    <img src="image/products/product-2.jpg" alt="">
-                                    <div class="hover-contents">
-                                        <a href="product-details.php" class="hover-image">
-                                            <img src="image/products/product-1.jpg" alt="">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a href="cart.php" class="single-btn">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.php" class="single-btn">
-                                                <i class="fas fa-heart"></i>
-                                            </a>
-                                            <a href="compare.php" class="single-btn">
-                                                <i class="fas fa-random"></i>
-                                            </a>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-                                                class="single-btn">
-                                                <i class="fas fa-eye"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="price-block">
-                                    <span class="price">₹51.20</span>
-                                    <del class="price-old">₹51.20</del>
-                                    <span class="price-discount">20%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-slide">
-                        <div class="product-card">
-                            <div class="product-header">
-                                <a href="" class="author">
-                                    Wpple
-                                </a>
-                                <h3><a href="product-details.php">3 Ways Create Better BOOK With</a></h3>
-                            </div>
-                            <div class="product-card--body">
-                                <div class="card-image">
-                                    <img src="image/products/product-6.jpg" alt="">
-                                    <div class="hover-contents">
-                                        <a href="product-details.php" class="hover-image">
-                                            <img src="image/products/product-2.jpg" alt="">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a href="cart.php" class="single-btn">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.php" class="single-btn">
-                                                <i class="fas fa-heart"></i>
-                                            </a>
-                                            <a href="compare.php" class="single-btn">
-                                                <i class="fas fa-random"></i>
-                                            </a>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-                                                class="single-btn">
-                                                <i class="fas fa-eye"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="price-block">
-                                    <span class="price">₹51.20</span>
-                                    <del class="price-old">₹51.20</del>
-                                    <span class="price-discount">20%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-slide">
-                        <div class="product-card">
-                            <div class="product-header">
-                                <a href="" class="author">
-                                    Epple
-                                </a>
-                                <h3><a href="product-details.php">What You Can Learn From Bill Gates</a>
-                                </h3>
-                            </div>
-                            <div class="product-card--body">
-                                <div class="card-image">
-                                    <img src="image/products/product-4.jpg" alt="">
-                                    <div class="hover-contents">
-                                        <a href="product-details.php" class="hover-image">
-                                            <img src="image/products/product-4.jpg" alt="">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a href="cart.php" class="single-btn">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.php" class="single-btn">
-                                                <i class="fas fa-heart"></i>
-                                            </a>
-                                            <a href="compare.php" class="single-btn">
-                                                <i class="fas fa-random"></i>
-                                            </a>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-                                                class="single-btn">
-                                                <i class="fas fa-eye"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="price-block">
-                                    <span class="price">₹51.20</span>
-                                    <del class="price-old">₹51.20</del>
-                                    <span class="price-discount">20%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-slide">
-                        <div class="product-card">
-                            <div class="product-header">
-                                <a href="" class="author">
-                                    Hpple
-                                </a>
-                                <h3><a href="product-details.php">a Half Very Simple Things You To</a></h3>
-                            </div>
-                            <div class="product-card--body">
-                                <div class="card-image">
-                                    <img src="image/products/product-8.jpg" alt="">
-                                    <div class="hover-contents">
-                                        <a href="product-details.php" class="hover-image">
-                                            <img src="image/products/product-4.jpg" alt="">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a href="cart.php" class="single-btn">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.php" class="single-btn">
-                                                <i class="fas fa-heart"></i>
-                                            </a>
-                                            <a href="compare.php" class="single-btn">
-                                                <i class="fas fa-random"></i>
-                                            </a>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-                                                class="single-btn">
-                                                <i class="fas fa-eye"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="price-block">
-                                    <span class="price">₹51.20</span>
-                                    <del class="price-old">₹51.20</del>
-                                    <span class="price-discount">20%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-slide">
-                        <div class="product-card">
-                            <div class="product-header">
-                                <a href="" class="author">
-                                    Bpple
-                                </a>
-                                <h3><a href="product-details.php">Here Is A Quick Cure For Book</a>
-                                </h3>
-                            </div>
-                            <div class="product-card--body">
-                                <div class="card-image">
-                                    <img src="image/products/product-2.jpg" alt="">
-                                    <div class="hover-contents">
-                                        <a href="product-details.php" class="hover-image">
-                                            <img src="image/products/product-7.jpg" alt="">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a href="cart.php" class="single-btn">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.php" class="single-btn">
-                                                <i class="fas fa-heart"></i>
-                                            </a>
-                                            <a href="compare.php" class="single-btn">
-                                                <i class="fas fa-random"></i>
-                                            </a>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-                                                class="single-btn">
-                                                <i class="fas fa-eye"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="price-block">
-                                    <span class="price">₹51.20</span>
-                                    <del class="price-old">₹51.20</del>
-                                    <span class="price-discount">20%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-slide">
-                        <div class="product-card">
-                            <div class="product-header">
-                                <a href="" class="author">
-                                    zpple
-                                </a>
-                                <h3><a href="product-details.php">BOOK: Do You Really Need It? This </a></h3>
-                            </div>
-                            <div class="product-card--body">
-                                <div class="card-image">
-                                    <img src="image/products/product-10.jpg" alt="">
-                                    <div class="hover-contents">
-                                        <a href="product-details.php" class="hover-image">
-                                            <img src="image/products/product-11.jpg" alt="">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a href="cart.php" class="single-btn">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.php" class="single-btn">
-                                                <i class="fas fa-heart"></i>
-                                            </a>
-                                            <a href="compare.php" class="single-btn">
-                                                <i class="fas fa-random"></i>
-                                            </a>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-                                                class="single-btn">
-                                                <i class="fas fa-eye"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="price-block">
-                                    <span class="price">₹51.20</span>
-                                    <del class="price-old">₹51.20</del>
-                                    <span class="price-discount">20%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <?php } ?>
+                </div>  
             </div>
-            </div>
-        </section>
+        </div>
+    </section>
+<?php } else {
+    echo "0 results";
+}
+// $conn->close();
+?>
+
+</section>
+
+
+                    <!-- BOOK 2 ENDS HERE -->
+
+                    
+      
         <!--=================================
     BIOGRAPHIES BOOKS
 ===================================== -->
-        <section class="section-margin">
-            <div class="biographies">
+        <section class="biographies">
+                   
+        
+
+        <!-- BOOK 3 STARTS HERE -->
+
+        <?php
+$sql = "SELECT * FROM products WHERE sortby = 'biographies'";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) { ?>
+    <section class="section-margin">
+        <div class="arts">
             <div class="container">
                 <div class="section-title section-title--bordered">
                     <h2>BIOGRAPHIES BOOKS</h2>
                 </div>
                 <div class="product-slider sb-slick-slider slider-border-single-row" data-slick-setting='{
-                        "autoplay": true,
-                        "autoplaySpeed": 8000,
-                        "slidesToShow": 5,
-                        "dots":true
-                    }' data-slick-responsive='[
-                        {"breakpoint":1200, "settings": {"slidesToShow": 4} },
-                        {"breakpoint":992, "settings": {"slidesToShow": 3} },
-                        {"breakpoint":768, "settings": {"slidesToShow": 2} },
-                        {"breakpoint":480, "settings": {"slidesToShow": 1} },
-                        {"breakpoint":320, "settings": {"slidesToShow": 1} }
-                    ]'>
-                    <div class="single-slide">
-                        <div class="product-card">
-                            <div class="product-header">
-                                <a href="" class="author">
-                                    Lpple
-                                </a>
-                                <h3><a href="product-details.php">Revolutionize Your BOOK With</a></h3>
-                            </div>
-                            <div class="product-card--body">
-                                <div class="card-image">
-                                    <img src="image/products/product-2.jpg" alt="">
-                                    <div class="hover-contents">
-                                        <a href="product-details.php" class="hover-image">
-                                            <img src="image/products/product-1.jpg" alt="">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a href="cart.php" class="single-btn">
-                                                <i class="fas fa-shopping-basket"></i>
+                    "autoplay": true,
+                    "autoplaySpeed": 8000,
+                    "slidesToShow": 5,
+                    "dots": true
+                }' data-slick-responsive='[
+                    {"breakpoint":1200, "settings": {"slidesToShow": 4}},
+                    {"breakpoint":992, "settings": {"slidesToShow": 3}},
+                    {"breakpoint":768, "settings": {"slidesToShow": 2}},
+                    {"breakpoint":480, "settings": {"slidesToShow": 1}},
+                    {"breakpoint":320, "settings": {"slidesToShow": 1}}
+                ]'>
+                    <?php while ($row = $result->fetch_assoc()) { ?>
+                        <div class="single-slide">
+                            <div class="product-card">
+                                <div class="product-header">
+                                    <a href="" class="author"><?php echo htmlspecialchars($row['author']); ?></a> 
+                                    <h3><a href="<?php echo htmlspecialchars($row['link']); ?>" target=”_blank”><?php echo htmlspecialchars($row['name']); ?></a></h3>
+                                </div>
+                                <div class="product-card--body">
+                                    <div class="card-image">
+                                        <img src="<?php echo htmlspecialchars($row['image_url']); ?>" alt="<?php echo htmlspecialchars($row['name']); ?>">
+                                        <div class="hover-contents">
+                                            <a href="<?php echo htmlspecialchars($row['link']); ?>" target=”_blank” class="hover-image">
+                                                <!-- Ensure you have the correct field for hover image if it's not meant to be the email -->
+                                                <img src="<?php echo htmlspecialchars($row['image_url']); ?>" alt="<?php echo htmlspecialchars($row['name']); ?>">
                                             </a>
-                                            <a href="wishlist.php" class="single-btn">
-                                                <i class="fas fa-heart"></i>
-                                            </a>
-                                            <a href="compare.php" class="single-btn">
-                                                <i class="fas fa-random"></i>
-                                            </a>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-                                                class="single-btn">
-                                                <i class="fas fa-eye"></i>
-                                            </a>
+                                            <div class="hover-btns">
+                                                <a href="<?php echo htmlspecialchars($row['link']); ?>" class="single-btn">
+                                                    <i class="fas fa-shopping-basket"><br>Buy Now On Amazon</i>
+                                                </a>
+                                                
+                                                
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="price-block">
-                                    <span class="price">₹51.20</span>
-                                    <del class="price-old">₹51.20</del>
-                                    <span class="price-discount">20%</span>
+                                    <div class="price-block">
+                                        <span class="price">₹<?php echo htmlspecialchars($row['price']); ?></span>  
+                                        <del class="price-old">₹<?php echo htmlspecialchars($row['originalprice']); ?></del>
+                                        <span class="price-discount"><?php echo htmlspecialchars($row['discount']); ?>%</span>  
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="single-slide">
-                        <div class="product-card">
-                            <div class="product-header">
-                                <a href="" class="author">
-                                    Jpple
-                                </a>
-                                <h3><a href="product-details.php">Turn Your BOOK Into High Machine</a>
-                                </h3>
-                            </div>
-                            <div class="product-card--body">
-                                <div class="card-image">
-                                    <img src="image/products/product-2.jpg" alt="">
-                                    <div class="hover-contents">
-                                        <a href="product-details.php" class="hover-image">
-                                            <img src="image/products/product-1.jpg" alt="">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a href="cart.php" class="single-btn">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.php" class="single-btn">
-                                                <i class="fas fa-heart"></i>
-                                            </a>
-                                            <a href="compare.php" class="single-btn">
-                                                <i class="fas fa-random"></i>
-                                            </a>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-                                                class="single-btn">
-                                                <i class="fas fa-eye"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="price-block">
-                                    <span class="price">₹51.20</span>
-                                    <del class="price-old">₹51.20</del>
-                                    <span class="price-discount">20%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-slide">
-                        <div class="product-card">
-                            <div class="product-header">
-                                <a href="" class="author">
-                                    Wpple
-                                </a>
-                                <h3><a href="product-details.php">3 Ways Create Better BOOK With</a></h3>
-                            </div>
-                            <div class="product-card--body">
-                                <div class="card-image">
-                                    <img src="image/products/product-3.jpg" alt="">
-                                    <div class="hover-contents">
-                                        <a href="product-details.php" class="hover-image">
-                                            <img src="image/products/product-2.jpg" alt="">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a href="cart.php" class="single-btn">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.php" class="single-btn">
-                                                <i class="fas fa-heart"></i>
-                                            </a>
-                                            <a href="compare.php" class="single-btn">
-                                                <i class="fas fa-random"></i>
-                                            </a>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-                                                class="single-btn">
-                                                <i class="fas fa-eye"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="price-block">
-                                    <span class="price">₹51.20</span>
-                                    <del class="price-old">₹51.20</del>
-                                    <span class="price-discount">20%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-slide">
-                        <div class="product-card">
-                            <div class="product-header">
-                                <a href="" class="author">
-                                    Epple
-                                </a>
-                                <h3><a href="product-details.php">What You Can Learn From Bill Gates</a>
-                                </h3>
-                            </div>
-                            <div class="product-card--body">
-                                <div class="card-image">
-                                    <img src="image/products/product-5.jpg" alt="">
-                                    <div class="hover-contents">
-                                        <a href="product-details.php" class="hover-image">
-                                            <img src="image/products/product-4.jpg" alt="">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a href="cart.php" class="single-btn">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.php" class="single-btn">
-                                                <i class="fas fa-heart"></i>
-                                            </a>
-                                            <a href="compare.php" class="single-btn">
-                                                <i class="fas fa-random"></i>
-                                            </a>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-                                                class="single-btn">
-                                                <i class="fas fa-eye"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="price-block">
-                                    <span class="price">₹51.20</span>
-                                    <del class="price-old">₹51.20</del>
-                                    <span class="price-discount">20%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-slide">
-                        <div class="product-card">
-                            <div class="product-header">
-                                <a href="" class="author">
-                                    Hpple
-                                </a>
-                                <h3><a href="product-details.php">a Half Very Simple Things You To</a></h3>
-                            </div>
-                            <div class="product-card--body">
-                                <div class="card-image">
-                                    <img src="image/products/product-6.jpg" alt="">
-                                    <div class="hover-contents">
-                                        <a href="product-details.php" class="hover-image">
-                                            <img src="image/products/product-4.jpg" alt="">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a href="cart.php" class="single-btn">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.php" class="single-btn">
-                                                <i class="fas fa-heart"></i>
-                                            </a>
-                                            <a href="compare.php" class="single-btn">
-                                                <i class="fas fa-random"></i>
-                                            </a>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-                                                class="single-btn">
-                                                <i class="fas fa-eye"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="price-block">
-                                    <span class="price">₹51.20</span>
-                                    <del class="price-old">₹51.20</del>
-                                    <span class="price-discount">20%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-slide">
-                        <div class="product-card">
-                            <div class="product-header">
-                                <a href="" class="author">
-                                    Bpple
-                                </a>
-                                <h3><a href="product-details.php">Here Is A Quick Cure For Book</a>
-                                </h3>
-                            </div>
-                            <div class="product-card--body">
-                                <div class="card-image">
-                                    <img src="image/products/product-8.jpg" alt="">
-                                    <div class="hover-contents">
-                                        <a href="product-details.php" class="hover-image">
-                                            <img src="image/products/product-7.jpg" alt="">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a href="cart.php" class="single-btn">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.php" class="single-btn">
-                                                <i class="fas fa-heart"></i>
-                                            </a>
-                                            <a href="compare.php" class="single-btn">
-                                                <i class="fas fa-random"></i>
-                                            </a>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-                                                class="single-btn">
-                                                <i class="fas fa-eye"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="price-block">
-                                    <span class="price">₹51.20</span>
-                                    <del class="price-old">₹51.20</del>
-                                    <span class="price-discount">20%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-slide">
-                        <div class="product-card">
-                            <div class="product-header">
-                                <a href="" class="author">
-                                    zpple
-                                </a>
-                                <h3><a href="product-details.php">BOOK: Do You Really Need It? This </a></h3>
-                            </div>
-                            <div class="product-card--body">
-                                <div class="card-image">
-                                    <img src="image/products/product-13.jpg" alt="">
-                                    <div class="hover-contents">
-                                        <a href="product-details.php" class="hover-image">
-                                            <img src="image/products/product-11.jpg" alt="">
-                                        </a>
-                                        <div class="hover-btns">
-                                            <a href="cart.php" class="single-btn">
-                                                <i class="fas fa-shopping-basket"></i>
-                                            </a>
-                                            <a href="wishlist.php" class="single-btn">
-                                                <i class="fas fa-heart"></i>
-                                            </a>
-                                            <a href="compare.php" class="single-btn">
-                                                <i class="fas fa-random"></i>
-                                            </a>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickModal"
-                                                class="single-btn">
-                                                <i class="fas fa-eye"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="price-block">
-                                    <span class="price">₹51.20</span>
-                                    <del class="price-old">₹51.20</del>
-                                    <span class="price-discount">20%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <?php } ?>
+                </div>  
             </div>
-            </div>
-        </section>
+        </div>
+    </section>
+<?php } else {
+    echo "0 results";
+}
+$conn->close();
+?>
+
+</section>
         <!--=================================
         Home Features Section
     ===================================== -->
@@ -1649,7 +889,7 @@ $visitorCount = getAndIncrementVisitorCount($conn);
                             </div>
                             <div class="text">
                                 <h5>Free Shipping Item</h5>
-                                <p> Orders over $500</p>
+                                <p> Orders over ₹500</p>
                             </div>
                         </div>
                     </div>
@@ -1671,7 +911,7 @@ $visitorCount = getAndIncrementVisitorCount($conn);
                             </div>
                             <div class="text">
                                 <h5>Cash On Delivery</h5>
-                                <p>Lorem ipsum dolor amet</p>
+                                <p>Pay at your doorstep</p>
                             </div>
                         </div>
                     </div>
@@ -1692,6 +932,7 @@ $visitorCount = getAndIncrementVisitorCount($conn);
         <!--=================================
         Promotion Section One
     ===================================== -->
+
         <section class="section-margin">
             <h1 class="sr-only">Promotion Section</h1>
             <div class="container">
@@ -1712,7 +953,8 @@ $visitorCount = getAndIncrementVisitorCount($conn);
         <!--=================================
         Home Two Column Section
     ===================================== -->
-        <section class="bg-gray section-padding-top section-padding-bottom section-margin">
+    
+        <!-- <section class="bg-gray section-padding-top section-padding-bottom section-margin">
             <h1 class="sr-only">Promotion Section</h1>
             <div class="container">
                 <div class="row">
@@ -3144,7 +2386,7 @@ $visitorCount = getAndIncrementVisitorCount($conn);
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--=================================
         CLIENT TESTIMONIALS
     ===================================== -->
@@ -3386,7 +2628,7 @@ $visitorCount = getAndIncrementVisitorCount($conn);
     <!--=================================
   Brands Slider
 ===================================== -->
-    <section class="section-margin">
+    <!-- <section class="section-margin">
         <h2 class="sr-only">Brand Slider</h2>
         <div class="container">
             <div class="brand-slider sb-slick-slider border-top border-bottom" data-slick-setting='{
@@ -3426,7 +2668,7 @@ $visitorCount = getAndIncrementVisitorCount($conn);
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!--=================================
     Footer Area
 ===================================== -->

@@ -1,27 +1,35 @@
 <?php
+
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
 include 'db.php';
 
-$name = $_POST['name'];
-$author = $_POST['author'];
-$price = $_POST['price'];
-$category = $_POST['category'];
-$sortby = $_POST['sortby'];
-$link = $_POST['link'];
-$image = $_FILES['image']['name'];
-$target = "productimages/".basename($image);
+$name = $conn->real_escape_string($_POST['name']);
+$author = $conn->real_escape_string($_POST['author']);
+$price = $conn->real_escape_string($_POST['price']);
+$originalprice = $conn->real_escape_string($_POST['originalprice']);
+$discount = $conn->real_escape_string($_POST['discount']);
+$category = $conn->real_escape_string($_POST['category']);
+$sortby = $conn->real_escape_string($_POST['sortby']);
+$link = $conn->real_escape_string($_POST['link']);
+$image = $conn->real_escape_string($_FILES['image']['name']);
+$target = "productimages/" . basename($image);
 
-if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
-    $sql = "INSERT INTO products (name, author, price, category, sortby, link, image_url) VALUES ('$name','$author', '$price', '$category','$sortby', '$link', '$target')";
-    if ($conn->query($sql) === TRUE) {
-        echo "New record created successfully";
-    } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-    }
+
+$stmt = $conn->prepare("INSERT INTO products (name, author, price, originalprice, discount, category, sortby, link, image_url) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
+$stmt->bind_param("ssddsssss", $name, $author, $price, $originalprice, $discount, $category, $sortby, $link, $target);
+
+if ($stmt->execute()) {
+    echo "New record created successfully";
 } else {
-    echo "Failed to upload image";
+    echo "Error: " . $stmt->error;
 }
+$stmt->close();
+
 
 $conn->close();
-header("Location: dashboard/listing.php"); // Redirect to the listing page
+header("Location: dashboard/listing.php"); 
 exit();
+
 ?>

@@ -290,14 +290,14 @@
 					<nav class="off-canvas-nav">
 						<ul class="mobile-menu menu-block-2">
 							<li class="menu-item-has-children">
-								<a href="#">Currency - USD $ <i class="fas fa-angle-down"></i></a>
+								<a href="#">Currency - INR ₹ </a>
 								<ul class="sub-menu">
 									<li> <a href="cart.php">USD $</a></li>
 									<li> <a href="checkout.php">EUR €</a></li>
 								</ul>
 							</li>
 							<li class="menu-item-has-children">
-								<a href="#">Lang - Eng<i class="fas fa-angle-down"></i></a>
+								<a href="#">Lang - Eng</a>
 								<ul class="sub-menu">
 									<li>Eng</li>
 									<li>Ban</li>

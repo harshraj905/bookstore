@@ -73,8 +73,12 @@ if (!$product) {
     <input type="text" name="name" value="<?php echo $product['name']; ?>"><br>
     <label>Author:</label>
     <input type="text" name="author" value="<?php echo $product['author']; ?>"><br>
-    <label>Price:</label>
+    <label>Your Price:</label>
     <input type="text" name="price" value="<?php echo $product['price']; ?>"><br>
+    <label>Original Price:</label>
+    <input type="text" name="originalprice" value="<?php echo $product['originalprice']; ?>"><br>
+    <label>Discount:</label>
+    <input type="text" name="discount" value="<?php echo $product['discount']; ?>"><br>
     <label>Category:</label>
     <input type="text" name="category" value="<?php echo $product['category']; ?>"><br>
     <input type="submit" value="Update Product">
